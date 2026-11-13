@@ -1,0 +1,139 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #101310; color: #ffffff; font-family: 'Montserrat', sans-serif; }
+a { text-decoration: none; color: inherit; }
+.section { padding: 110px 8%; }
+.eyebrow { color: #b8f34a; font-size: 12px; letter-spacing: 3px; font-weight: 800; }
+
+/* NAVEGACIÓN */
+.navbar { position: absolute; top: 0; left: 0; width: 100%; padding: 25px 8%; display: flex; justify-content: space-between; align-items: center; z-index: 10; background: rgba(10, 13, 10, 0.8); }
+.logo { font-family: 'Barlow Condensed', sans-serif; font-size: 27px; font-weight: 900; letter-spacing: 1px; }
+.logo span { color: #b8f34a; }
+.navbar nav { display: flex; gap: 25px; }
+.navbar nav a { font-size: 11px; font-weight: 700; text-transform: uppercase; transition: 0.3s; }
+.navbar nav a:hover { color: #b8f34a; }
+
+/* PORTADA */
+.hero { min-height: 100vh; position: relative; display: flex; align-items: center; padding: 150px 8% 100px; background: linear-gradient(90deg, rgba(8,12,8,0.95), rgba(8,12,8,0.3)), linear-gradient(0deg, rgba(8,12,8,0.5), transparent), url("https://tvguideuk.com/images/sport-hub/football.webp?v=411") center/cover no-repeat; }
+.hero-content { max-width: 750px; }
+.hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(65px, 10vw, 125px); line-height: 0.9; font-weight: 900; margin: 25px 0; }
+.hero h1 span { color: #b8f34a; }
+.hero-content p { max-width: 550px; color: #c4c9c1; line-height: 1.8; font-size: 14px; margin-bottom: 35px; }
+.button { display: inline-block; background: #b8f34a; color: #101310; border: none; padding: 16px 28px; font-size: 11px; font-weight: 900; letter-spacing: 1px; cursor: pointer; transition: 0.3s; }
+.button:hover { background: #ffffff; transform: translateY(-3px); }
+.hero-bottom { position: absolute; bottom: 30px; left: 8%; right: 8%; display: flex; justify-content: space-between; color: #a6aaa5; font-size: 10px; letter-spacing: 2px; }
+
+/* ENCABEZADOS */
+.section-heading { max-width: 750px; margin-bottom: 55px; }
+.section-heading h2, .intro-text h2, .contact-info h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(42px, 6vw, 70px); line-height: 0.95; margin: 18px 0; }
+.section-heading p { color: #a6aaa5; line-height: 1.8; font-size: 14px; }
+
+/* INTRODUCCIÓN */
+.intro { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+.intro-image img { width: 100%; height: 500px; object-fit: cover; filter: grayscale(25%); }
+.intro-text p { color: #a6aaa5; font-size: 14px; line-height: 1.9; margin-bottom: 18px; }
+
+/* EQUIPOS */
+.teams { background: #171b17; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.team-card { background: #222822; overflow: hidden; transition: 0.3s; border: 1px solid #303830; }
+.team-card:hover { transform: translateY(-7px); border-color: #b8f34a; }
+.team-card img { width: 100%; height: 210px; object-fit: cover; }
+.team-info { padding: 25px; }
+.team-country { color: #b8f34a; font-size: 10px; font-weight: 800; letter-spacing: 2px; }
+.team-info h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 32px; margin: 12px 0; }
+.team-info p { color: #a6aaa5; font-size: 12px; line-height: 1.8; }
+.trophy-number { font-family: 'Barlow Condensed', sans-serif; font-size: 65px; font-weight: 900; color: #b8f34a; margin-top: 20px; line-height: 1; }
+.team-info > strong { font-size: 11px; letter-spacing: 1px; }
+.team-info .trophies { margin-top: 15px; padding-top: 15px; border-top: 1px solid #414941; }
+.small-note { color: #929a90; font-size: 11px; margin-top: 25px; line-height: 1.7; }
+
+/* PALMARÉS */
+.honours { background: #101310; }
+.honours-table { max-width: 900px; border-top: 1px solid #3b443b; }
+.honour-row { display: grid; grid-template-columns: 1.5fr 1fr 0.5fr; padding: 20px; border-bottom: 1px solid #343b34; align-items: center; font-size: 14px; }
+.honour-row strong { color: #b8f34a; font-size: 22px; }
+.table-head { color: #b8f34a; font-size: 11px; font-weight: 800; letter-spacing: 2px; }
+
+/* COMPETICIONES */
+.competitions { background: #171b17; }
+.competition-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.competition-card { padding: 35px; background: #222822; border: 1px solid #343b34; transition: 0.3s; }
+.competition-card:hover { border-color: #b8f34a; transform: translateY(-5px); }
+.competition-number { color: #b8f34a; font-size: 13px; font-weight: 900; }
+.competition-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 27px; margin: 20px 0 12px; }
+.competition-card p { color: #a6aaa5; font-size: 12px; line-height: 1.8; }
+
+/* HISTORIA */
+.history { background: #101310; }
+.history-content { display: grid; grid-template-columns: 1.5fr 1fr; gap: 60px; align-items: center; }
+.history-content p { color: #a6aaa5; line-height: 1.9; font-size: 14px; margin-bottom: 18px; }
+.history-number { background: #b8f34a; color: #101310; padding: 45px; text-align: center; }
+.history-number strong { display: block; font-family: 'Barlow Condensed', sans-serif; font-size: 100px; line-height: 1; }
+.history-number span { font-weight: 800; font-size: 13px; }
+
+/* REGLAS */
+.rules { background: #171b17; }
+.rules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.rule-card { padding: 30px; background: #222822; border: 1px solid #343b34; transition: 0.3s; }
+.rule-card:hover { transform: translateY(-5px); border-color: #b8f34a; }
+.rule-card span { color: #b8f34a; font-weight: 900; }
+.rule-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 25px; margin: 15px 0; }
+.rule-card p { color: #a6aaa5; line-height: 1.8; font-size: 12px; }
+
+/* POSICIONES */
+.position-list { display: grid; }
+.position-item { display: grid; grid-template-columns: 70px 1fr; gap: 25px; padding: 25px 0; border-bottom: 1px solid #343b34; }
+.position-item strong { color: #b8f34a; font-size: 25px; }
+.position-item h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 25px; margin-bottom: 10px; }
+.position-item p { color: #a6aaa5; font-size: 13px; line-height: 1.8; }
+
+/* LEYENDAS */
+.legends { background: #171b17; }
+.legend-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.legend-card { padding: 30px; border-left: 3px solid #b8f34a; background: #222822; transition: 0.3s; }
+.legend-card:hover { transform: translateY(-5px); }
+.legend-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 30px; margin-bottom: 12px; }
+.legend-card p { color: #a6aaa5; font-size: 12px; line-height: 1.8; }
+
+/* FRASE */
+.quote { min-height: 420px; display: flex; align-items: center; padding: 80px 8%; background: linear-gradient(rgba(8,12,8,0.85), rgba(8,12,8,0.85)), url("https://www.kigalitoday.com/IMG/jpg/20251018_213826.jpg") center/cover no-repeat; }
+.quote h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(38px, 6vw, 70px); margin-top: 20px; }
+
+/* CONTACTO */
+.contact { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.contact-info p { color: #a6aaa5; line-height: 1.8; font-size: 14px; max-width: 400px; }
+#contact-form { display: flex; flex-direction: column; gap: 12px; }
+#contact-form label { font-size: 12px; font-weight: 700; }
+#contact-form input, #contact-form textarea { width: 100%; padding: 15px; background: #222822; color: white; border: 1px solid #414941; font-family: 'Montserrat', sans-serif; outline: none; }
+#contact-form input:focus, #contact-form textarea:focus { border-color: #b8f34a; }
+#contact-form textarea { resize: vertical; }
+#form-response { color: #b8f34a; font-size: 13px; }
+
+/* FOOTER */
+footer { padding: 55px 8%; background: #090c09; text-align: center; }
+footer p { color: #a6aaa5; font-size: 12px; margin: 15px 0 25px; }
+.footer-links { display: flex; justify-content: center; gap: 25px; margin-bottom: 30px; }
+.footer-links a { font-size: 11px; color: #a6aaa5; }
+.footer-links a:hover { color: #b8f34a; }
+footer small { color: #727a71; font-size: 10px; }
+
+/* MÓVILES Y TABLETS */
+@media (max-width: 1000px) {
+    .team-grid, .competition-grid, .rules-grid, .legend-grid { grid-template-columns: repeat(2, 1fr); }
+    .navbar { flex-direction: column; gap: 20px; }
+    .navbar nav { flex-wrap: wrap; justify-content: center; }
+}
+@media (max-width: 700px) {
+    .section { padding: 75px 6%; }
+    .intro, .history-content, .contact { grid-template-columns: 1fr; gap: 35px; }
+    .team-grid, .competition-grid, .rules-grid, .legend-grid { grid-template-columns: 1fr; }
+    .navbar nav { gap: 12px; }
+    .navbar nav a { font-size: 9px; }
+    .hero { min-height: 750px; }
+    .hero-bottom { font-size: 8px; }
+    .intro-image img { height: 300px; }
+    .honour-row { padding: 15px 8px; font-size: 11px; }
+    .honour-row strong { font-size: 18px; }
+    .footer-links { flex-wrap: wrap; gap: 15px; }
+}
